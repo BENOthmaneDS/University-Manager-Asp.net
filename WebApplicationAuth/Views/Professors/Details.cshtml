@@ -1,0 +1,42 @@
+﻿@model WebApplicationAuth.Models.Professor
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Professor</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProfessorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProfessorName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProfessorLastname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProfessorLastname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Profession)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Profession)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
